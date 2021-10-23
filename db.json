@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "status": ""
+    },
+    {
+      "title": "NewProduct",
+      "description": "This item is changed",
+      "brand": "Xyz",
+      "price": "100000",
+      "id": "2",
+      "status": "pummy"
+    },
+    {
+      "id": "3",
+      "name": "chocalate",
+      "price": "12"
+    },
+    {
+      "id": "10",
+      "name": "milkcake",
+      "price": "200",
+      "status": "yummy"
+    }
+  ]
+}

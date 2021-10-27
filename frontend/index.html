@@ -17,6 +17,7 @@
 </style>
 
 <body>
+    <button onclick="get()">Get Data</button>
     <div>
         <h1>Add Product</h1>
         <input type="number" id="id" placeholder="id">
@@ -53,13 +54,20 @@
     // }
     // data()
 
+    async function get() {
+        let response = await fetch("http://localhost:5000/api/products")
+        let data = await response.json();
+        console.log(data);
+
+        }
+
 
     async function addProduct() {
         let data = {
             id: document.getElementById("id").value,
             name: document.getElementById("name").value,
             price: document.getElementById("price").value,
-            status:document.getElementById("status").value
+            status: document.getElementById("status").value
 
         };
         try {
@@ -114,8 +122,8 @@
         let response = await fetch(`http://localhost:5000/api/products/${id}`);
         let data = await response.json();
 
-        
-        data.status=s;
+
+        data.status = s;
 
         console.log(data);
 
